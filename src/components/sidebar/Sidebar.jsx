@@ -1,5 +1,7 @@
 import { RssFeed, PlayCircleFilledOutlined, Group, Bookmark, HelpOutline, WorkOutline, Event, School } from '@mui/icons-material';
 import React from 'react'
+import { Users } from '../../dummyData';
+import CloseFriend from '../closeFriend/CloseFriend';
 import "./sidebar.css";
 
 export default function Sidebar() {
@@ -45,150 +47,9 @@ export default function Sidebar() {
         </button>
         <hr className='sidebarHr'/>
         <ul className="sidebarFriendsList">
-          <li className="sidebarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">John Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/3.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Jack Wizard</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/4.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kevin Schwager</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/5.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kim Young</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/6.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Tina Welly</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/7.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Selen Clear</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">John Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/3.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Jack Wizard</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/4.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kevin Schwager</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/5.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kim Young</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/6.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Tina Welly</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/7.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Selen Clear</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">John Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/3.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Jack Wizard</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/4.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kevin Schwager</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/5.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kim Young</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/6.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Tina Welly</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/7.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Selen Clear</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">John Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/3.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Jack Wizard</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/4.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kevin Schwager</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/5.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kim Young</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/6.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Tina Welly</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/7.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Selen Clear</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">John Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/3.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Jack Wizard</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/4.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kevin Schwager</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/5.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kim Young</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/6.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Tina Welly</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/7.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Selen Clear</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">John Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/3.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Jack Wizard</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/4.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kevin Schwager</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/5.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Kim Young</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/6.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Tina Welly</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/7.jpeg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Selen Clear</span>
-          </li>
+          {Users.map((u)=> (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
